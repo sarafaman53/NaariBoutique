@@ -103,7 +103,7 @@ class ClientSearch extends Component {
 
   fetchListOfClients() {
     
-    axios.post('http://localhost:8080/client/searchClient', this.state
+    axios.post('http://naari-boutique-api.herokuapp.com/client/searchClient', this.state
     ).then((response) => {
       this.handleClientSearchListResponse(response);
       this.setState({_notificationSystem: null})

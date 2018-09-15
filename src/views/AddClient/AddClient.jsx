@@ -133,7 +133,7 @@ class AddClient extends Component {
         e.preventDefault();
 
         if (this.validateForm()) {
-            axios.post("http://localhost:8080/client" , 
+            axios.post("http://naari-boutique-api.herokuapp.com/client" , 
            {
             'firstName' : this.state.firstName.trim(),
             'lastName' : this.sanitizePayload(this.state.lastName),
